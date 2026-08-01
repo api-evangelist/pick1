@@ -1,7 +1,25 @@
 aid: pick1
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pick1.png
 name: Pick1
-description: Pick1 is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Pick1 was a real-time survey and social analytics platform founded in 2010 in San Francisco
+  by Paolo Privitera (with Armando Biondi and Lorenzo Barbantini Scanni). It let brands run white-label
+  surveys and augment respondent profiles with data from a dozen-plus social networks for audience
+  segmentation, CRM enrichment, and retargeting, working with brands such as IKEA, Toyota, Telefonica,
+  and American Express. The company was seed-backed by 500 Global and others, and was acquired by Evensi
+  around 2017; its operating status is now closed and the pick1.com domain no longer resolves. This
+  record is retained as a historical portfolio-lead stub — there is no live API or developer surface to
+  enrich.
 url: https://raw.githubusercontent.com/api-evangelist/pick1/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-defunct: true
+x-defunct-reason: 'Acquired by Evensi (~2017); operating status closed; pick1.com does not resolve (DNS ENOTFOUND, probed 2026-07-20).'
 tags:
 - Company
+- Survey
+- Social Analytics
+- Market Research
+- Audience Segmentation
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +48,8 @@ maintainers:
 common:
 - type: Website
   url: https://pick1.com
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
